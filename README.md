@@ -1,8 +1,7 @@
 # Gvcs
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gvcs`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Generic Version Control System (Gvcs) is the standard API to provides operation on an version control system.
+This gem is essentially and by design hollow. The actual implementation is up to the provider. In this case can be found under gem git\_cli
 
 ## Installation
 
@@ -22,7 +21,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This library is just the standardize classes definition. 
+Sample provider is [git\_cli](https://github.com/chrisliaw/git\_cli)
+
+It means this gem is not designed to be use independently. It have to backed by a provider by requiring the provider after this. Example the way to load this will be:
+
+```ruby
+require 'gvcs'
+require <provider>
+```
+Refers [git\_cli](https://github.com/chrisliaw/git\_cli) for more info.
 
 ## Development
 
@@ -32,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gvcs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/gvcs/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gvcs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/chrisliaw/gvcs/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
@@ -41,4 +49,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Gvcs project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/gvcs/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Gvcs project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/chrisliaw/gvcs/blob/master/CODE_OF_CONDUCT.md).
