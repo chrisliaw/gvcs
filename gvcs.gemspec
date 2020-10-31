@@ -6,10 +6,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Chris Liaw"]
   spec.email         = ["chrisliaw@antrapol.com"]
 
-  spec.summary       = %q{}
-  spec.description   = %q{}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.summary       = %q{Generic Version Control System}
+  spec.description   = %q{Standardize API for version control system interfacing}
+  spec.homepage      = "https://github.com/chrisliaw/gvcs"
+  spec.license       = "GPLv3"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   #spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
