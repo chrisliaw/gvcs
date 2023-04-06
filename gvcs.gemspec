@@ -28,4 +28,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency 'devops_assist'
+  spec.add_development_dependency 'release-gem'
 end
